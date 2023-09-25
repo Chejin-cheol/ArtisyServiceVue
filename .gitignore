@@ -2,6 +2,7 @@
 node_modules
 /dist
 /src/assets/constants/tokenInfo.js
+/src/assets/constants/secret.js
 
 
 # local env files

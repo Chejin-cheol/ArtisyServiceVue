@@ -2,7 +2,7 @@ import token from "../constants/tokenInfo";
 import urls from "../constants/urls";
 import axios from "axios";
 
-const xapp = async () => {
+export const xapp = async () => {
     try{
         let tokenResult = await axios.post(`${process.env.VUE_APP_ROOT}${urls.xapp_token}`,{
             client_id: token.client_id,
@@ -10,13 +10,8 @@ const xapp = async () => {
         });
 
         console.log(tokenResult.data)
-        return tokenResult
+        return tokenResult.data.token
     } catch(e) {
         console.log(e)
     }
-}
-
-
-export default {
-    xapp
 }
