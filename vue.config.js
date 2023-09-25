@@ -4,8 +4,8 @@ module.exports = {
     productionSourceMap: false,
     pluginOptions: {
         vuetify: {
-            // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
-        }
+			// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
+		}
     },
     configureWebpack: {
         resolve: {
@@ -14,4 +14,5 @@ module.exports = {
             }
         }
     },
+    lintOnSave:false
 }

@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
     {
         path: "/", // [경로]
-        name: "Main'", // [이름]
+        name: "Main", // [이름]
         component: () => import('../components/Main') // [로드 파일]
     },
     {
